@@ -8,21 +8,77 @@
 
     <style>
         div{
-            width : 900px;
+            width : 700px;
             margin : 0px auto 0px auto;
+        }
+
+        .card-img-top{
+            width:500px;
+            height: 600px;
+            margin : 0px auto 0px auto;
+        }
+
+        .card-text{
+            font-weight: bold;
+            font-size: 100px;
+        }
+        .comment{
+            font-size: 50px;
+            font-weight: unset;
+        }
+        .comment1{
+            font-size : 30px;
+            font-weight: unset;
         }
     </style>
 </head>
 <body>
-    <div>
+    <div class="wrap">
         <div class="card">
             <img class="card-img-top" src="https://www.yoox.com/images/items/12/12370618_14_f.jpg?width=306&height=390&impolicy=crop&gravity=Center">
             <div class="card-body">
-              <p class="card-text">옷을 팝니다</p>
-              <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
-              <p class="card-text comment">여기에 코멘트가 들어갑니다.</p>
+              <h1 class="card-text">MSGM</h1>
+              <p class="card-text comment">가격 : 50,000원</p>
+              <p class="card-text comment1">이 옷은 어쩌고 저쩌고 팔아요</p>
             </div>
           </div>
+          <span></span>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">주문자 이름</span>
+              <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+          </div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">수량</label>
+            <select class="custom-select" id="inputGroupSelect01">
+              <option selected>-- 수량을 선택하세요 --</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
     </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">주소</span>
+          <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">전화번호</span>
+          <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+      </div>
+
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button">주문하기</a>
+      </p>
+
 </body>
 </html>
